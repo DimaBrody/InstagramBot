@@ -3,7 +3,7 @@ Schedulable accessibility subscriptions bot for instagram.
 
 There is a simple example of the implementation **Accessility** library. It tries to open Instagram App by it's packageName, then makes some operations like clicking on search/profile icon, pasting needed nickname into the search field and follows certain amount of users. The only thing is that the scrolling and search click is realized by *SU* command (input ... / swipe ...). The device must be rooted for that but you can implement Accessibility realization with Action.SWIPE and check item IDs at the screen at the moment by the command in your terminal:
 
-``
+``sh
 adb shell am broadcast -a checkNodes
 ``
 
