@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">InstagramBot</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+
+    <string name="accessibility_service_description">Tap the top right button to enable bot extra cleaning.\n\n
+        bot need it to activate features:
+    </string>
+
+
+    <string name="notification_channel">Main Notifications</string>
+    <string name="notification_channel_description">Clean notifications</string>
+    <string name="following_delay_time">Following delay minutes:</string>
+    <string name="followers_delay_hours">Followers delay hours:</string>
+    <string name="people_amount">People count:</string>
+</resources>

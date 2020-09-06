@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#fafafa"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/toolbar_time"
+        android:layout_width="match_parent"
+        app:titleTextColor="#333"
+        android:layout_height="?attr/actionBarSize"
+        app:contentInsetStartWithNavigation="0dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_scrollFlags="scroll|enterAlways"
+        app:popupTheme="@style/ThemeOverlay.AppCompat.Light"
+        app:theme="@style/Toolbar.Light" />
+
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/time_text_followers"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/time_text_following"
+        android:text="@string/following_delay_time"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="70dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/time_text_following"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/main_edittext"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:maxLength="6"
+        android:id="@+id/time_edit_following"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/time_text_following"
+
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        app:layout_constraintBottom_toTopOf="@id/time_text_count"
+        android:id="@+id/time_text_followers"
+        android:text="@string/followers_delay_hours"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="70dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/time_text_followers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/main_edittext"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:id="@+id/time_edit_followers"
+        android:maxLength="6"
+        android:layout_height="50dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/time_text_followers"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textSize="20sp"
+        android:fontFamily="sans-serif-medium"
+        android:id="@+id/time_text_count"
+        android:text="@string/people_amount"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        android:layout_width="70dp"
+        android:inputType="number"
+        app:layout_constraintTop_toBottomOf="@id/time_text_count"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:background="@drawable/main_edittext"
+        android:layout_margin="16dp"
+        android:gravity="center"
+        android:id="@+id/time_edit_count"
+        android:maxLength="6"
+        android:layout_height="50dp"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
